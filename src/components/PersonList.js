@@ -15,14 +15,15 @@ function PersonList() {
             role:"Tester",
         },
         {
-            id:1,
+            id:3,
             name: "Suresh",
             role:"sysadmin",
         },
             
     ]
 
-const getperson = personlist.map( person => <Person person={person}></Person> )
+//key is important makes it more efficient
+const getperson = personlist.map( person => <Person key={person.id} person={person}></Person> )
     
     return (
         <div>
