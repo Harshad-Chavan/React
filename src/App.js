@@ -15,12 +15,16 @@ import PersonList from './components/PersonList'
 import NameList from './components/NameList'
 import Stylesheets from './components/Stylesheets'
 import Inlinestyle from './components/inlinestyle'
+import Form from './components/Form'
 import styles from './apps.module.css'
 
 function App() {
   return (
     <div className="App">
-      <h1 className={styles.success}>success</h1>
+      <Form />
+
+
+      {/* <h1 className={styles.success}>success</h1> */}
       {/* <Greet name="Harshad"/>
       <Greet name="Suresh"/>
       <Welcome name = "Ramesh" />
